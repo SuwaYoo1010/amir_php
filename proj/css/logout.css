@@ -1,0 +1,48 @@
+/* Common styles for both admin and student sections */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: right;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styles for student section */
+.student-content {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Styles for admin section */
+.admin-content {
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+/* Logout link style */
+.logout-back-link{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.view-records-box button a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Add more styles as needed */

@@ -1,0 +1,68 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to right, #ffb73f, #efae40, #dfa441, #d09b42, #c19243);
+}
+
+.actions{
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.actions button {
+    border: solid 1px white;
+    background-color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.admin-card{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    height: 80%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #c19243;
+    border-radius: 4px;
+}
+
+form button{
+    font-size: 16px;
+    color: white;
+    border: solid 1px;
+    background-color:#c19243;
+    padding: 8px;
+}

@@ -1,0 +1,230 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to right, #ffb73f, #efae40, #dfa441, #d09b42, #c19243);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.admin-card{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    width:40%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    margin-bottom: 20px;
+}
+
+
+.edit-button{
+    margin-bottom: 15px;
+}
+
+.action-btn{
+    font-size: 16px;
+    padding: 8px;
+}
+
+.record {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.record h3 {
+    color: #333;
+}
+
+.record table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.record th,
+.record td {
+    padding: 15px; /* Reduce padding for better spacing */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.record tr:nth-child(even) {
+    background-color: #f3ffa5;
+}
+
+.actions button {
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.actions button:hover {
+    transition: 0.1s;
+    transform: scale(115%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pagination {
+    margin-top: 20px; /* Add margin-top to create space between records and pagination */
+}
+
+.pagination a {
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: #ddd;
+    color: #333;
+}
+
+.pagination a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+input{
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    * {
+        font-size: 16px; 
+    }
+
+    .admin-card h2,
+    .student-card h2,
+    .record h3 {
+        font-size: 22px; 
+    }
+
+    .pagination a {
+        font-size: 16px; 
+    }
+
+    .actions {
+        width: 100%;
+        column-gap: 2px;
+    }
+
+    .actions button{
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .record {
+        padding: 15px;
+    }
+
+    .record th,
+    .record td {
+        padding: 15px;
+    }
+
+    .action-btn{
+        font-size: 12px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-right: 25px;
+    }   
+
+}
+
+@media (max-width: 425px) {
+
+    .admin-card{
+        width: 65%;
+    }
+
+    .admin-card h2,
+    .student-card h2 {
+        font-size: 18px;
+    }
+
+    .pagination a {
+        font-size: 14px; 
+    }
+    .container {
+        padding: 10px;
+    }
+
+    .admin-card,
+    .student-card {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .actions {
+        font-size: 10px;
+        width: 100%;
+    }
+    .actions button{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .record {
+        width: 340px;
+        margin-top: 20px; 
+    }
+
+    .record th,
+    .record td {
+        padding: 5px; 
+    }
+    .record th {
+        font-size: 12px;
+    }
+    .record td{
+        font-size: 7px;
+    }
+    .action-btn{
+        font-size: 8px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-bottom: 15px;
+    }   
+    .pagination {
+        margin-top: 10px; 
+    }
+}
+
